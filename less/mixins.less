@@ -1,1 +1,39 @@
 // Mixins Here
+
+// makes borders, say border or border-top etc for side:
+
+.borderMaker(@side: border; @width: 1px; @style: solid; @color: @main-border-color) {
+  @{side}: @width @style @color;
+}
+
+// font tool, set defaults per most common fonts and adjust as needed
+
+.font(@fontFamily: @mainFont; @fontSize: 1.6rem; @fontColor: @main-font-color; @fontWeight: normal; @textDecoration: none) {
+  font-family: @fontFamily;
+  font-size: @fontSize;
+  color: @fontColor;
+  font-weight: @fontWeight;
+  text-decoration: none;
+}
+
+// make buttons, set defaults per most common button used and adjust as needed
+.buttonMaker(@bgColor: @btn-bg-color; @borderRadius: 5px; @paddingTB: .75rem; @width: 30%; @fontFamily: @mainFont; @fontSize: 1.8rem; @fontColor: white; @fontWeight: bold; @side: border; @bWidth: 2px; @bStyle: solid; @bColor: @btn-bg-color) {
+  background-color: @bgColor;
+  border-radius: @borderRadius;
+  padding: @paddingTB 0;
+  width: @width;
+  text-align: center;
+  // passes in paramaters to font mixin, defaults set
+  .font(@fontFamily; @fontSize; @fontColor; @fontWeight);
+  // passes in parameters to borderMaker mixin, defaults set
+  .borderMaker(@side; @bWidth; @bStyle; @bColor);
+}
+
+// sets flex and most common options, with no paramaters behaves like display:flex would by itself
+.flex(@fd: row; @fw: nowrap; @jc: flex-start; @ai: stretch) {
+  display: flex;
+  flex-direction: @fd;
+  flex-wrap: @fw;
+  justify-content: @jc;
+  align-items: @ai;
+}
