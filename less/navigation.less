@@ -10,11 +10,14 @@ nav {
   h1 {
     .font(@fontColor: @header-font-color; @fontSize: 3.6rem; @fontFamily: @headerFont);
     padding-bottom: 10px;
+    @media @phone {
+      margin-bottom: 10px;
+    }
   }
   a {
-    .font(@fontSize: 1.4rem);
+    .font(@fontColor: @header-font-color);
     &:hover {
-      .font(@fontColor: @btn-bg-color; @fontSize: 1.4rem);
+      .font(@fontColor: @footer-font-color);
     } 
   }
   .navbar {
