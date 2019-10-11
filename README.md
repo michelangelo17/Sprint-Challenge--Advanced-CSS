@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+>An adaptive website uses media breakpoints to ensure that the site displays correctly on different size displays. A responsive website uses an array of tools, from responsive units, to flexbox and grid, to media queries to make the transition from one size screen to another fluid and seemless. In other words, an adaptive website when shrunk down or expanded should "snap" into different layouts at different points. Whereas a responsive site should gradually seem to grow and shrink almost naturally to fill the space and fit the display in a natural feeling way. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+>A mobile first design process is exactly what it sounds like, designing a site to work first on the mobile and then moving on to other form factors like tablets and laptops. Since most users now access sites from their phones, it is increasingly the case that you should plan your website around that type of devide primarily and modify your designs to work on other devices once you have created a great mobile experience. There are some code differences, in a mobile first design you'll typically use "min-width" media queries instead of "max-width" but the primary difference is more philosophical. You could technically create a site that is identical on both mobile and desktop using either process, it's more about which device type you have as your primary focus. In Lambda so far we've been using a desktop first approach, but we do still have solid mobile designs, but we'd likely have a different look to our sites if we started with the mobile design as the primary starting point. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+>It (provided you haven't already made any changes) sets the font-size on the document to the equivelent of 10px using a responsive unit. Setting the size to 10px means you can then use rem units and multiply the value by 10 in order to set font sizes. For example, 1.6rem would be equal to 16px. (Or, 1.6*10px = 16px.) 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+>Preprocessing is a way of adding functionality to a language without making a new one altogether. It allows you in the case of LESS to add JavaScript like features in the writing of CSS, and then compiles your code into vanilla CSS for the browser to run, giving you the best of both worlds: Powerful programming tools, and cross platform browser support of clean simple CSS, all at the same time. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favourite concept is being able to use mixins in other mixins. The most challenging thing thus far has been rulesets for media queries. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
