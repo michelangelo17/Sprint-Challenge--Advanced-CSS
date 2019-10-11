@@ -206,6 +206,11 @@ nav .navbar .navLinks {
   align-items: center;
   width: 45%;
 }
+@media (max-width: 500px) {
+  nav .navbar .navLinks {
+    width: 80%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -218,6 +223,10 @@ footer {
 }
 .home {
   margin-top: 80px;
+}
+.home .intro .headerImg {
+  width: 100%;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -290,11 +299,11 @@ footer {
   text-decoration: none;
   border: 2px solid #22283A;
 }
-.home .walk .walk-text .walk-img {
+.home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-text .walk-img img {
+.home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
