@@ -1,1 +1,28 @@
 // Navigation code here
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color:@nav-bg;
+  opacity: .9;
+  h1 {
+    .font(@fontColor: @header-font-color; @fontSize: 3.6rem);
+    padding-bottom: 10px;
+  }
+  a {
+    .font(@fontSize: 1.4rem);
+    &:hover {
+      .font(@fontColor: @btn-bg-color; @fontSize: 1.4rem);
+    } 
+  }
+  .navbar {
+    .flex(@fd: column; @ai: center);
+    padding: 10px 0;
+    .navLinks {
+      .flex(@jc: space-around; @ai: center);
+      width: 45%;
+    }
+  }
+}
