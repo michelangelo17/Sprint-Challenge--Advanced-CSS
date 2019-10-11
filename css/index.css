@@ -169,7 +169,7 @@ nav {
   opacity: 0.9;
 }
 nav h1 {
-  font-family: font-family: 'Ubuntu', sans-serif;
+  font-family: 'Russo One', sans-serif;
   font-size: 3.6rem;
   color: #23293B;
   font-weight: normal;
@@ -177,14 +177,14 @@ nav h1 {
   padding-bottom: 10px;
 }
 nav a {
-  font-family: font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.4rem;
   color: #5E6164;
   font-weight: normal;
   text-decoration: none;
 }
 nav a:hover {
-  font-family: font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.4rem;
   color: #22283A;
   font-weight: normal;
@@ -215,6 +215,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 80px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -257,6 +260,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  border-radius: 5px;
+  padding: 0.75rem 0;
+  width: 30%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 0px solid black;
 }
 .home .walk .walk-img {
   width: 46%;

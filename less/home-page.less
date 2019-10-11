@@ -1,7 +1,7 @@
 // Home Content
 
 .home {
-
+  margin-top: 80px;
   .intro {
 
     h2 {
@@ -58,6 +58,10 @@
       }
 
       .btn {
+        //This is a parametric mixin, I set default values for the paramaters, which is why I didn't need to give it any now. I use over 10 different parameters. Uncomment the second button maker to test.
+        .buttonMaker();
+        
+        // .buttonMaker(@bgColor: orange; @width: 50%; @fontSize: 2rem; @fontColor: purple; @borderRadius: 10px);
       }
     }
 
